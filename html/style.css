@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,800;1,100&family=Monoton&family=Open+Sans:wght@500&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    border: 2px solid red;
+    height: 500px;
+    width: 100%;
+    display: flex;
+
+    /* Flex properties for container */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+
+    /* shorthand */
+    /* flex-flow: row wrap; */
+
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+    /* vertical even spaces */
+    align-items: stretch;   
+}
+
+
+.item{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(104, 173, 0);
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* flex properties for a flex element */
+#item-1{
+    /* order: 2; */
+    flex-grow: 2;
+    /* flex-shrink: 1; */
+}
+
+#item-2{
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 100px; */
+    align-self: center;
+}
+
+#item-3{
+    /* order: 4; */
+    /* flex-shrink: 3; */
+
+    /* shorthand */
+    flex: 2 2 70px;
+}
+
